@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { CardPageRoutingModule } from './card-routing.module';
+import { IbibliotecaPageRoutingModule } from './ibiblioteca-routing.module';
 
-import { CardPage } from './card.page';
+import { IbibliotecaPage } from './ibiblioteca.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CardPageRoutingModule
+    IbibliotecaPageRoutingModule
   ],
-  declarations: [CardPage]
+  declarations: [IbibliotecaPage]
 })
-export class CardPageModule {}
+export class IbibliotecaPageModule {}

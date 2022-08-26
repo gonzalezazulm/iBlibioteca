@@ -1,32 +1,38 @@
 <ion-header [translucent]="true">
-  <ion-toolbar color="primary">
+  <ion-toolbar class="intro" color="primary">
     <ion-title>
-      Biblioteca
+      Inicio
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title>Inicio</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <ion-app>
-    <ion-content fullscreen>
-      <ion-card>
-        <ion-card-header>
-          <ion-card-title>Bienvenido a iBiblioteca!</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-          iBiblioteca es una aplicacion desarrollada con ionic que permite gestionar una biblioteca de un centro
-          educativo.
-          Para acceder a la biblioteca pulsa en el siguiente boton:
-        </ion-card-content>
-        <ion-button  expand="block">A block button</ion-button>
-      </ion-card>
-    </ion-content>
-
-  </ion-app>
+<ion-content fullscreen padding>
+  <ion-card class="carta">
+    <ion-card-header>
+      <ion-card-title>Bienvenido a iBiblioteca!</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      iBiblioteca es una aplicacion desarrollada con ionic que permite gestionar una biblioteca de un centro
+      educativo.
+      Para acceder a la biblioteca pulsa en el siguiente boton:
+    </ion-card-content>
+    <ion-button expand="full" color="light" routerLink="/ibiblioteca">
+      <ion-icon name="school">
+      </ion-icon>
+      Acceso a Ibiblioteca
+    </ion-button> 
+  </ion-card>
+  <ion-card class="carta">
+    <ion-card-header>
+      <ion-card-title>Informacion sobre el autor</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+     Aplicacion desarrollada por Azul Gonzalez.
+    </ion-card-content>
+    <ion-button expand="full" color="light" routerLink="/autor">
+      <ion-icon name="person">
+      </ion-icon>
+      Consultar Informacion
+    </ion-button> 
+  </ion-card>
 </ion-content>
